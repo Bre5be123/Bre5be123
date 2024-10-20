@@ -1,619 +1,865 @@
+--Move & Ultimate Names
+ 
 local player = game.Players.LocalPlayer
-
-local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
-
-local Window = OrionLib:MakeWindow({Name = "A-60's TSB Script", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
-
---[[
-Name = <string> - The name of the UI.
-HidePremium = <bool> - Whether or not the user details shows Premium status or not.
-SaveConfig = <bool> - Toggles the config saving in the UI.
-ConfigFolder = <string> - The name of the folder where the configs are saved.
-IntroEnabled = <bool> - Whether or not to show the intro animation.
-IntroText = <string> - Text to show in the intro animation.
-IntroIcon = <string> - URL to the image you want to use in the intro animation.
-Icon = <string> - URL to the image you want displayed on the window.
-CloseCallback = <function> - Function to execute when the window is closed.
-]]
-
-local Tab = Window:MakeTab({
-	Name = "Custom Movesets 1",
-	Icon = "rbxassetid://4483345998",
-	PremiumOnly = false
-})
-
---[[
-Name = <string> - The name of the tab.
-Icon = <string> - The icon of the tab.
-PremiumOnly = <bool> - Makes the tab accessible to Sirus Premium users only.
-]]
-
-local Section = Tab:AddSection({
-	Name = "LocalPlayer"
-})
-
---[[
-Name = <string> - The name of the section.
-]]
-
-OrionLib:MakeNotification({
-	Name = "Welcome",
-	Content = "Notification content... what will it say??",
-	Image = "rbxassetid://4483345998",
-	Time = 5
-})
-
---[[
-Title = <string> - The title of the notification.
-Content = <string> - The content of the notification.
-Image = <string> - The icon of the notification.
-Time = <number> - The duration of the notfication.
-]]
-
-Tab:AddButton({
-	Name = "Gojo Moveset (The Strongest Hero)",
-	Callback = function()
-      		loadstring(game:HttpGet("https://raw.githubusercontent.com/skibiditoiletfan2007/BaldyToSorcerer/main/Latest.lua"))()
-  	end    
-})
-
---[[
-Name = <string> - The name of the button.
-Callback = <function> - The function of the button.
-]]
-
-Tab:AddButton({
-	Name = "Reaper V2 Moveset (Brutal Demon)",
-	Callback = function()
-      		getgenv().Music = false 
---Setting this to false usually fixes most executors
---also it helps load time a little bit
-getgenv().AttackQuality = 'High'
---Set to Low,High
-
- getgenv().ConstantSpeed = false
---if you want your speed to be constant
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Reapvitalized/TSB/main/APOPHENIA.lua"))()
-  	end    
-})
-
---[[
-Name = <string> - The name of the button.
-Callback = <function> - The function of the button.
-]]
-
-Tab:AddButton({
-	Name = "Kyra Gojo Moveset (The Strongest Hero)",
-	Callback = function()
-      		loadstring(game:HttpGet("https://raw.githubusercontent.com/Gokou300/Gokou300/main/Kyra%20Gojo%20Tsb%20Bypassed"))()
-  	end    
-})
-
---[[
-Name = <string> - The name of the button.
-Callback = <function> - The function of the button.
-]]
-
-Tab:AddButton({
-	Name = "Hakari Moveset (The Strongest Hero)",
-	Callback = function()
-      		loadstring(game:HttpGet("https://rawscripts.net/raw/The-Strongest-Battlegrounds-Hero-to-True-Nosakatan-18742"))()
-  	end    
-})
-
---[[
-Name = <string> - The name of the button.
-Callback = <function> - The function of the button.
-]]
-
-Tab:AddButton({
-	Name = "Dio Moveset (Hero Hunter)",
-	Callback = function()
-      		loadstring(game:HttpGet("https://raw.githubusercontent.com/Medley-Taboritsky/RobloxScripting/refs/heads/main/DIO_Garou_TSB"))()
-  	end    
-})
-
---[[
-Name = <string> - The name of the button.
-Callback = <function> - The function of the button.
-]]
-
-Tab:AddButton({
-	Name = "Jun Moveset (The Strongest Hero)",
-	Callback = function()
-      		loadstring(game:HttpGet('https://raw.githubusercontent.com/Kenjihin69/Kenjihin69/refs/heads/main/Tp%20exploit%20saitama%20to%20jun'))()
-  	end    
-})
-
---[[
-Name = <string> - The name of the button.
-Callback = <function> - The function of the button.
-]]
-
-Tab:AddButton({
-	Name = "Sonic Moveset (Hero Hunter)",
-	Callback = function()
-      		loadstring(game:HttpGet("https://pastebin.com/raw/7V1mUBtQ"))()
-  	end    
-})
-
---[[
-Name = <string> - The name of the button.
-Callback = <function> - The function of the button.
-]]
-
-Tab:AddButton({
-	Name = "Sukuna Moveset (Blade Master)",
-	Callback = function()
-      		loadstring(game:HttpGet("https://raw.githubusercontent.com/zyrask/Nexus-Base/main/atomic-blademaster%20to%20sukuna"))()
-  	end    
-})
-
---[[
-Name = <string> - The name of the button.
-Callback = <function> - The function of the button.
-]]
-
-Tab:AddButton({
-	Name = "Deku Moveset (The Strongest Hero)",
-	Callback = function()
-      		loadstring(game:HttpGet("https://pastefy.app/MNg2zcxz/raw"))()
-  	end    
-})
-
---[[
-Name = <string> - The name of the button.
-Callback = <function> - The function of the button.
-]]
-
-local Tab = Window:MakeTab({
-	Name = "Custom Movesets 2",
-	Icon = "rbxassetid://4483345998",
-	PremiumOnly = false
-})
-
---[[
-Name = <string> - The name of the tab.
-Icon = <string> - The icon of the tab.
-PremiumOnly = <bool> - Makes the tab accessible to Sirus Premium users only.
-]]
-
-local Section = Tab:AddSection({
-	Name = "LocalPlayer 2"
-})
-
---[[
-Name = <string> - The name of the section.
-]]
-
-Tab:AddButton({
-	Name = "Kungfu Panda Moveset (Hero Hunter)",
-	Callback = function()
-      		loadstring(game:HttpGet("https://pastebin.com/raw/DqXUTANt"))()
-  	end    
-})
-
---[[
-Name = <string> - The name of the button.
-Callback = <function> - The function of the button.
-]]
-
-Tab:AddButton({
-	Name = "Toji Moveset (Blade Master)",
-	Callback = function()
-      		loadstring(game:HttpGet('https://pastebin.com/raw/VQnyWP5D'))()
-  	end    
-})
-
---[[
-Name = <string> - The name of the button.
-Callback = <function> - The function of the button.
-]]
-
-Tab:AddButton({
-	Name = "Goku Ui Moveset (Hero Hunter)",
-	Callback = function()
-      		loadstring(game:HttpGet("https://rawscripts.net/raw/The-Strongest-Battlegrounds-Goku-Moveset-V2-17977"))()
-  	end    
-})
-
---[[
-Name = <string> - The name of the button.
-Callback = <function> - The function of the button.
-]]
-
-Tab:AddButton({
-	Name = "KJ Moveset (The Strongest Hero)",
-	Callback = function()
-      		loadstring(game:HttpGet("https://raw.githubusercontent.com/RathaTepmanuth10/Kj-script-/main/Kj"))()
-  	end    
-})
-
---[[
-Name = <string> - The name of the button.
-Callback = <function> - The function of the button.
-]]
-
-Tab:AddButton({
-	Name = "Scripter/Developer Moveset (The Strongest Hero)",
-	Callback = function()
-      		loadstring(game:HttpGet("https://pastebin.com/raw/JE8sEbcw"))()
-  	end    
-})
-
---[[
-Name = <string> - The name of the button.
-Callback = <function> - The function of the button.
-]]
-
-Tab:AddButton({
-	Name = "Jester Moveset (Hero Hunter)",
-	Callback = function()
-      		loadstring(game:HttpGet("https://raw.githubusercontent.com/Reapvitalized/TSB/refs/heads/main/ARCAURA.lua"))()
-  	end    
-})
-
---[[
-Name = <string> - The name of the button.
-Callback = <function> - The function of the button.
-]]
-
---[[
-Name = <string> - The name of the button.
-Callback = <function> - The function of the button.
-]]
-
-local Tab = Window:MakeTab({
-	Name = "Scripts Hubs",
-	Icon = "rbxassetid://4483345998",
-	PremiumOnly = false
-})
-
---[[
-Name = <string> - The name of the tab.
-Icon = <string> - The icon of the tab.
-PremiumOnly = <bool> - Makes the tab accessible to Sirus Premium users only.
-]]
-
-local Section = Tab:AddSection({
-	Name = "LocalPlayer 3"
-})
-
---[[
-Name = <string> - The name of the section.
-]]
-
-Tab:AddButton({
-	Name = "Nicuse Hub (Need Key)",
-	Callback = function()
-      		loadstring(game:HttpGet("https://rawscripts.net/raw/The-Strongest-Battlegrounds-FREE-AND-BEST-GUI-15593"))()
-  	end    
-})
-
---[[
-Name = <string> - The name of the button.
-Callback = <function> - The function of the button.
-]]
-
-Tab:AddButton({
-	Name = "(Random) Hub (Need Key)",
-	Callback = function()
-      		loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-The-Strongest-Battlegrounds-Hub-19562"))()
-  	end    
-})
-
---[[
-Name = <string> - The name of the button.
-Callback = <function> - The function of the button.
-]]
-
-Tab:AddButton({
-	Name = "Phantasm V2 Hub (No Key)",
-	Callback = function()
-      		getgenv().ToggleKeybind = Enum.KeyCode.RightControl
-getgenv().FreeEmotesTab = false
-loadstring(game:HttpGet("https://raw.githubusercontent.com/ATrainz/main/main/Phantasm-Loader.lua"))()
-  	end    
-})
-
---[[
-Name = <string> - The name of the button.
-Callback = <function> - The function of the button.
-]]
-
-Tab:AddButton({
-	Name = "Flame Hub (No Key)",
-	Callback = function()
-      		loadstring(game:HttpGet("https://raw.githubusercontent.com/1Toxin/flame/main/loader"))()
-  	end    
-})
-
---[[
-Name = <string> - The name of the button.
-Callback = <function> - The function of the button.
-]]
-
-Tab:AddButton({
-	Name = "TSB Hub (No Key)",
-	Callback = function()
-      		loadstring(game:HttpGet("https://freenote.biz/raw/xkcdkgyhkx",true))()
-  	end    
-})
-
---[[
-Name = <string> - The name of the button.
-Callback = <function> - The function of the button.
-]]
-
-Tab:AddButton({
-	Name = "Kade Hub (No Key)",
-	Callback = function()
-      		loadstring(game:HttpGet("https://raw.githubusercontent.com/skibiditoiletfan2007/KadeHubRepository/main/Latest.lua"))()
-  	end    
-})
-
---[[
-Name = <string> - The name of the button.
-Callback = <function> - The function of the button.
-]]
-
-Tab:AddButton({
-	Name = "Nyula Hub (No Key)",
-	Callback = function()
-      		loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/nyulachan/nyula/main/nyuladhm"))()
-  	end    
-})
-
---[[
-Name = <string> - The name of the button.
-Callback = <function> - The function of the button.
-]]
-
-Tab:AddButton({
-	Name = "Bedol Hub (No Key)",
-	Callback = function()
-      		loadstring(game:HttpGet("https://raw.githubusercontent.com/3345-c-a-t-s-u-s/New-C4-Remote.lua/main/TSBG.jsx"))()
-  	end    
-})
-
---[[
-Name = <string> - The name of the button.
-Callback = <function> - The function of the button.
-]]
-
-Tab:AddButton({
-	Name = "Xtrey10x Hub (No Key)",
-	Callback = function()
-      		loadstring(game:HttpGet("https://raw.githubusercontent.com/xtrey10x/xtrey10x-hub/main/saitama"))()
-  	end    
-})
-
---[[
-Name = <string> - The name of the button.
-Callback = <function> - The function of the button.
-]]
-
-local Tab = Window:MakeTab({
-	Name = "Auto Combos",
-	Icon = "rbxassetid://4483345998",
-	PremiumOnly = false
-})
-
---[[
-Name = <string> - The name of the tab.
-Icon = <string> - The icon of the tab.
-PremiumOnly = <bool> - Makes the tab accessible to Sirus Premium users only.
-]]
-
-local Section = Tab:AddSection({
-	Name = "LocalPlayer 4"
-})
-
---[[
-Name = <string> - The name of the section.
-]]
-
-Tab:AddButton({
-	Name = "Auto Combo GUI 1 (No Key)",
-	Callback = function()
-      		loadstring(game:HttpGet("https://pastefy.app/50dQTFqE/raw"))()
-  	end    
-})
-
---[[
-Name = <string> - The name of the button.
-Callback = <function> - The function of the button.
-]]
-
-Tab:AddButton({
-	Name = "Auto Combo GUI 2 (Need Key)",
-	Callback = function()
-      		loadstring(game:HttpGet("https://raw.githubusercontent.com/BronzeScripts/tsbg/main/autocombo",true))()
-  	end    
-})
-
---[[
-Name = <string> - The name of the button.
-Callback = <function> - The function of the button.
-]]
-
-Tab:AddButton({
-	Name = "Auto Combo GUI 3 (No Key)",
-	Callback = function()
-      		loadstring(game:HttpGet("https://pastefy.app/UY1oh6PG/raw"))()
-  	end    
-})
-
---[[
-Name = <string> - The name of the button.
-Callback = <function> - The function of the button.
-]]
-
-Tab:AddButton({
-	Name = "Auto Combo GUI 4 (No Key)",
-	Callback = function()
-      		loadstring(game:HttpGet("https://pastefy.app/XNKwIjUX/raw"))()
-  	end    
-})
-
---[[
-Name = <string> - The name of the button.
-Callback = <function> - The function of the button.
-]]
-
-Tab:AddButton({
-	Name = "Auto Kyoto GUI 1 (No Key)",
-	Callback = function()
-      		loadstring(game:HttpGet("https://pastefy.app/Z7DawZJB/raw"))()
-  	end    
-})
-
---[[
-Name = <string> - The name of the button.
-Callback = <function> - The function of the button.
-]]
-
-local Tab = Window:MakeTab({
-	Name = "Scripts",
-	Icon = "rbxassetid://4483345998",
-	PremiumOnly = false
-})
-
---[[
-Name = <string> - The name of the tab.
-Icon = <string> - The icon of the tab.
-PremiumOnly = <bool> - Makes the tab accessible to Sirus Premium users only.
-]]
-
-local Section = Tab:AddSection({
-	Name = "LocalPlayer 5"
-})
-
---[[
-Name = <string> - The name of the section.
-]]
-
-Tab:AddButton({
-	Name = "Instant Kill (Need Key)",
-	Callback = function()
-      		loadstring(game:HttpGet("https://pastefy.app/REPoaFWC/raw",true))();
-  	end    
-})
-
---[[
-Name = <string> - The name of the button.
-Callback = <function> - The function of the button.
-]]
-
-Tab:AddButton({
-	Name = "Auto Void Kill (Use Flowing Water)",
-	Callback = function()
-      		loadstring(game:HttpGet("https://pastefy.app/afHQ7oyj/raw"))()
-  	end    
-})
-
---[[
-Name = <string> - The name of the button.
-Callback = <function> - The function of the button.
-]]
-
-Tab:AddButton({
-	Name = "Steal Kill",
-	Callback = function()
-      		loadstring(game:HttpGet("https://pastefy.app/v7noKGy5/raw"))()
-  	end    
-})
-
---[[
-Name = <string> - The name of the button.
-Callback = <function> - The function of the button.
-]]
-
-Tab:AddButton({
-	Name = "Camlock",
-	Callback = function()
-      		loadstring(game:HttpGet("https://pastefy.app/cfMW31sf/raw"))()
-  	end    
-})
-
---[[
-Name = <string> - The name of the button.
-Callback = <function> - The function of the button.
-]]
-
-local Tab = Window:MakeTab({
-	Name = "Admins Commands",
-	Icon = "rbxassetid://4483345998",
-	PremiumOnly = false
-})
-
---[[
-Name = <string> - The name of the tab.
-Icon = <string> - The icon of the tab.
-PremiumOnly = <bool> - Makes the tab accessible to Sirus Premium users only.
-]]
-
-local Section = Tab:AddSection({
-	Name = "LocalPlayer 6"
-})
-
---[[
-Name = <string> - The name of the section.
-]]
-
-Tab:AddButton({
-	Name = "Infinite Yield",
-	Callback = function()
-      		loadstring(game:HttpGet("https://rawscripts.net/raw/Infinite-Yield_500"))()
-  	end    
-})
-
---[[
-Name = <string> - The name of the button.
-Callback = <function> - The function of the button.
-]]
-
-Tab:AddButton({
-	Name = "Nameless Admin",
-	Callback = function()
-      		loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-nameless-admin-mobile-19245"))()
-  	end    
-})
-
---[[
-Name = <string> - The name of the button.
-Callback = <function> - The function of the button.
-]]
-
-local Tab = Window:MakeTab({
-	Name = "Player",
-	Icon = "rbxassetid://4483345998",
-	PremiumOnly = false
-})
-
---[[
-Name = <string> - The name of the tab.
-Icon = <string> - The icon of the tab.
-PremiumOnly = <bool> - Makes the tab accessible to Sirus Premium users only.
-]]
-
-local Section = Tab:AddSection({
-	Name = "LocalPlayer 7"
-})
-
---[[
-Name = <string> - The name of the section.
-]]
-
-Tab:AddSlider({
-	Name = "Walkspeed",
-	Min = 16,
-	Max = 100,
-	Default = 16,
-	Color = Color3.fromRGB(255,255,255),
-	Increment = 1,
-	ValueName = "Speed",
-	Callback = function(Value)
-		game.Players.LocalPlayer.Character.Humanoid.Walkspeed = Value
-	end    
-})
+ 
+local playerGui = player.PlayerGui
+ 
+local hotbar = playerGui:FindFirstChild("Hotbar")
+ 
+local backpack = hotbar:FindFirstChild("Backpack")
+ 
+local hotbarFrame = backpack:FindFirstChild("Hotbar")
+ 
+local baseButton = hotbarFrame:FindFirstChild("1").Base
+ 
+local ToolName = baseButton.ToolName
+ 
+ 
+ToolName.Text = "Super Kick"
+ 
+ 
+local player = game.Players.LocalPlayer
+ 
+local playerGui = player.PlayerGui
+ 
+local hotbar = playerGui:FindFirstChild("Hotbar")
+ 
+local backpack = hotbar:FindFirstChild("Backpack")
+ 
+local hotbarFrame = backpack:FindFirstChild("Hotbar")
+ 
+local baseButton = hotbarFrame:FindFirstChild("2").Base
+ 
+local ToolName = baseButton.ToolName
+ 
+ 
+ToolName.Text = "Teleprt Dash"
+ 
+ 
+local player = game.Players.LocalPlayer
+ 
+local playerGui = player.PlayerGui
+ 
+local hotbar = playerGui:FindFirstChild("Hotbar")
+ 
+local backpack = hotbar:FindFirstChild("Backpack")
+ 
+local hotbarFrame = backpack:FindFirstChild("Hotbar")
+ 
+local baseButton = hotbarFrame:FindFirstChild("3").Base
+ 
+local ToolName = baseButton.ToolName
+ 
+ 
+ToolName.Text = "Bike Kick"
+ 
+ 
+local player = game.Players.LocalPlayer
+ 
+local playerGui = player.PlayerGui
+ 
+local hotbar = playerGui:FindFirstChild("Hotbar")
+ 
+local backpack = hotbar:FindFirstChild("Backpack")
+ 
+local hotbarFrame = backpack:FindFirstChild("Hotbar")
+ 
+local baseButton = hotbarFrame:FindFirstChild("4").Base
+ 
+local ToolName = baseButton.ToolName
+ 
+ 
+ToolName.Text = "Speed Of Light"
+ 
+ 
+local Players = game:GetService("Players")
+ 
+local player = Players.LocalPlayer
+ 
+local playerGui = player:WaitForChild("PlayerGui")
+ 
+ 
+local function findGuiAndSetText()
+ 
+    local screenGui = playerGui:FindFirstChild("ScreenGui")
+ 
+    if screenGui then
+ 
+        local magicHealthFrame = screenGui:FindFirstChild("MagicHealth")
+ 
+        if magicHealthFrame then
+ 
+            local textLabel = magicHealthFrame:FindFirstChild("TextLabel")
+ 
+            if textLabel then
+ 
+                textLabel.Text = "suiiiiiiiii"
+ 
+            end
+ 
+        end
+ 
+    end
+ 
+end
+ 
+ 
+playerGui.DescendantAdded:Connect(findGuiAndSetText)
+ 
+findGuiAndSetText()
+ 
+--[[Animations]]
+ 
+--[[Move 1]]
+ 
+local animationId = 12534735382
+ 
+ 
+local player = game.Players.LocalPlayer
+ 
+local character = player.Character or player.CharacterAdded:Wait()
+ 
+local humanoid = character:WaitForChild("Humanoid")
+ 
+ 
+local function onAnimationPlayed(animationTrack)
+ 
+    if animationTrack.Animation.AnimationId == "rbxassetid://" .. animationId then
+ 
+ 
+local p = game.Players.LocalPlayer
+ 
+local Humanoid = p.Character:WaitForChild("Humanoid")
+ 
+ 
+for _, animTrack in pairs(Humanoid:GetPlayingAnimationTracks()) do
+ 
+    animTrack:Stop()
+ 
+end
+ 
+ 
+local AnimAnim = Instance.new("Animation")
+ 
+AnimAnim.AnimationId = "rbxassetid://17838006839"
+ 
+local Anim = Humanoid:LoadAnimation(AnimAnim)
+ 
+ 
+local startTime = 0
+ 
+ 
+Anim:Play()
+ 
+Anim:AdjustSpeed(0.1)
+ 
+Anim.TimePosition = startTime
+ 
+Anim:AdjustSpeed(0.9)
+ 
+ 
+    end
+ 
+end
+ 
+--[[END OF MOVE 1 ANIM]]
+ 
+--[[Move 2]]
+ 
+ 
+humanoid.AnimationPlayed:Connect(onAnimationPlayed)
+ 
+ 
+local animationId = 12509505723
+ 
+ 
+local player = game.Players.LocalPlayer
+ 
+local character = player.Character or player.CharacterAdded:Wait()
+ 
+local humanoid = character:WaitForChild("Humanoid")
+ 
+ 
+local function onAnimationPlayed(animationTrack)
+ 
+    if animationTrack.Animation.AnimationId == "rbxassetid://" .. animationId then
+ 
+ 
+local p = game.Players.LocalPlayer
+ 
+local Humanoid = p.Character:WaitForChild("Humanoid")
+ 
+ 
+for _, animTrack in pairs(Humanoid:GetPlayingAnimationTracks()) do
+ 
+    animTrack:Stop()
+ 
+end
+ 
+ 
+local AnimAnim = Instance.new("Animation")
+ 
+AnimAnim.AnimationId = "rbxassetid://18179181663"
+ 
+local Anim = Humanoid:LoadAnimation(AnimAnim)
+ 
+ 
+local startTime = 0
+ 
+ 
+Anim:Play()
+ 
+Anim:AdjustSpeed(1)
+ 
+Anim.TimePosition = startTime
+ 
+Anim:AdjustSpeed(1)
+ 
+ 
+    end
+ 
+end
+ 
+--[[END OF MOVE 2 ANIM]]
+ 
+--[[Move 3]]
+ 
+ 
+humanoid.AnimationPlayed:Connect(onAnimationPlayed)
+ 
+ 
+local animationId = 12618271998
+ 
+ 
+local player = game.Players.LocalPlayer
+ 
+local character = player.Character or player.CharacterAdded:Wait()
+ 
+local humanoid = character:WaitForChild("Humanoid")
+ 
+ 
+local function onAnimationPlayed(animationTrack)
+ 
+    if animationTrack.Animation.AnimationId == "rbxassetid://" .. animationId then
+ 
+ 
+local p = game.Players.LocalPlayer
+ 
+local Humanoid = p.Character:WaitForChild("Humanoid")
+ 
+ 
+for _, animTrack in pairs(Humanoid:GetPlayingAnimationTracks()) do
+ 
+    animTrack:Stop()
+ 
+end
+ 
+ 
+local AnimAnim = Instance.new("Animation")
+ 
+AnimAnim.AnimationId = "rbxassetid://17838619895"
+ 
+local Anim = Humanoid:LoadAnimation(AnimAnim)
+ 
+ 
+local startTime = 0.3
+ 
+ 
+Anim:Play()
+ 
+Anim:AdjustSpeed(0)
+ 
+Anim.TimePosition = startTime
+ 
+Anim:AdjustSpeed(1)
+ 
+ 
+delay(1.8, function()
+ 
+    Anim:Stop()
+ 
+end)
+ 
+ 
+    end
+ 
+end
+ 
+--[[END OF MOVE 3 ANIM]]
+ 
+--[[Move 4]]
+ 
+ 
+humanoid.AnimationPlayed:Connect(onAnimationPlayed)
+ 
+ 
+local animationId = 12684390285
+ 
+ 
+local player = game.Players.LocalPlayer
+ 
+local character = player.Character or player.CharacterAdded:Wait()
+ 
+local humanoid = character:WaitForChild("Humanoid")
+ 
+ 
+local function onAnimationPlayed(animationTrack)
+ 
+    if animationTrack.Animation.AnimationId == "rbxassetid://" .. animationId then
+ 
+local p = game.Players.LocalPlayer
+ 
+local Humanoid = p.Character:WaitForChild("Humanoid")
+ 
+ 
+for _, animTrack in pairs(Humanoid:GetPlayingAnimationTracks()) do
+ 
+    animTrack:Stop()
+ 
+end
+ 
+ 
+local AnimAnim = Instance.new("Animation")
+ 
+AnimAnim.AnimationId = "rbxassetid://18897118507"
+ 
+local Anim = Humanoid:LoadAnimation(AnimAnim)
+ 
+ 
+local startTime = 0
+ 
+ 
+Anim:Play()
+ 
+Anim:AdjustSpeed(0)
+ 
+Anim.TimePosition = startTime
+ 
+Anim:AdjustSpeed(1)
+ 
+
+    Anim:Stop()
+ 
+end)
+ 
+    end
+ 
+end
+ 
+--[[END OF MOVE 4 ANIM]]
+ 
+--[[Wall combo]]
+ 
+humanoid.AnimationPlayed:Connect(onAnimationPlayed)
+ 
+local animationId = 15955393872
+ 
+ 
+local player = game.Players.LocalPlayer
+ 
+local character = player.Character or player.CharacterAdded:Wait()
+ 
+local humanoid = character:WaitForChild("Humanoid")
+ 
+ 
+local function onAnimationPlayed(animationTrack)
+ 
+    if animationTrack.Animation.AnimationId == "rbxassetid://" .. animationId then
+ 
+local p = game.Players.LocalPlayer
+ 
+local Humanoid = p.Character:WaitForChild("Humanoid")
+ 
+ 
+for _, animTrack in pairs(Humanoid:GetPlayingAnimationTracks()) do
+ 
+    animTrack:Stop()
+ 
+end
+ 
+ 
+local AnimAnim = Instance.new("Animation")
+ 
+AnimAnim.AnimationId = "rbxassetid://15943915877"
+ 
+local Anim = Humanoid:LoadAnimation(AnimAnim)
+ 
+ 
+local startTime = 0.05
+ 
+ 
+Anim:Play()
+ 
+Anim:AdjustSpeed(0)
+ 
+Anim.TimePosition = startTime
+ 
+Anim:AdjustSpeed(1)
+ 
+ 
+    end
+ 
+end
+ 
+--[[END OF WALL COMBO ANIM]]
+ 
+--[[Ult Activation]]
+ 
+humanoid.AnimationPlayed:Connect(onAnimationPlayed)
+ 
+ 
+local animationId = 12447707844
+ 
+ 
+local player = game.Players.LocalPlayer
+ 
+local character = player.Character or player.CharacterAdded:Wait()
+ 
+local humanoid = character:WaitForChild("Humanoid")
+ 
+ 
+local function onAnimationPlayed(animationTrack)
+ 
+    if animationTrack.Animation.AnimationId == "rbxassetid://" .. animationId then
+ 
+local p = game.Players.LocalPlayer
+ 
+local Humanoid = p.Character:WaitForChild("Humanoid")
+ 
+ 
+for _, animTrack in pairs(Humanoid:GetPlayingAnimationTracks()) do
+ 
+    animTrack:Stop()
+ 
+end
+ 
+ 
+local AnimAnim = Instance.new("Animation")
+ 
+AnimAnim.AnimationId = "rbxassetid://17106858586 "
+ 
+local Anim = Humanoid:LoadAnimation(AnimAnim)
+ 
+ 
+local startTime = 0
+ 
+ 
+Anim:Play()
+ 
+Anim:AdjustSpeed(0)
+ 
+Anim.TimePosition = startTime
+ 
+Anim:AdjustSpeed(1)
+ 
+    end
+ 
+end
+--[[END OF ULT ACTIVATION ANIM]]
+ 
+--[[Dash]]
+ 
+humanoid.AnimationPlayed:Connect(onAnimationPlayed)
+ 
+ 
+local animationId = 10479335397
+ 
+ 
+local player = game.Players.LocalPlayer
+ 
+local character = player.Character or player.CharacterAdded:Wait()
+ 
+local humanoid = character:WaitForChild("Humanoid")
+ 
+ 
+local function onAnimationPlayed(animationTrack)
+ 
+    if animationTrack.Animation.AnimationId == "rbxassetid://" .. animationId then
+ 
+local p = game.Players.LocalPlayer
+ 
+local Humanoid = p.Character:WaitForChild("Humanoid")
+ 
+ 
+for _, animTrack in pairs(Humanoid:GetPlayingAnimationTracks()) do
+ 
+    animTrack:Stop()
+ 
+end
+ 
+ 
+local AnimAnim = Instance.new("Animation")
+ 
+AnimAnim.AnimationId = "rbxassetid://13294790250"
+ 
+local Anim = Humanoid:LoadAnimation(AnimAnim)
+ 
+ 
+local startTime = 0
+ 
+ 
+Anim:Play()
+ 
+Anim:AdjustSpeed(0)
+ 
+Anim.TimePosition = startTime
+ 
+Anim:AdjustSpeed(1.3)
+ 
+ 
+delay(1.8, function()
+ 
+    Anim:Stop()
+ 
+end)
+ 
+ 
+    end
+ 
+end
+ 
+--[[END OF DASH ANIM]]
+ 
+--[[Uppercut]]
+humanoid.AnimationPlayed:Connect(onAnimationPlayed)
+ 
+ 
+local animationId = 10503381238
+ 
+ 
+local player = game.Players.LocalPlayer
+ 
+local character = player.Character or player.CharacterAdded:Wait()
+ 
+local humanoid = character:WaitForChild("Humanoid")
+ 
+ 
+local function onAnimationPlayed(animationTrack)
+ 
+    if animationTrack.Animation.AnimationId == "rbxassetid://" .. animationId then
+ 
+local p = game.Players.LocalPlayer
+ 
+local Humanoid = p.Character:WaitForChild("Humanoid")
+ 
+ 
+for _, animTrack in pairs(Humanoid:GetPlayingAnimationTracks()) do
+ 
+    animTrack:Stop()
+ 
+end
+ 
+ 
+local AnimAnim = Instance.new("Animation")
+ 
+AnimAnim.AnimationId = "rbxassetid://14900168720"
+ 
+local Anim = Humanoid:LoadAnimation(AnimAnim)
+ 
+ 
+local startTime = 1.3
+ 
+ 
+Anim:Play()
+ 
+Anim:AdjustSpeed(0)
+ 
+Anim.TimePosition = startTime
+ 
+Anim:AdjustSpeed(0.7)
+ 
+ 
+    end
+ 
+end
+ 
+--[[END OF UPPERCUT ANIM]]
+ 
+--[[Downslam]]
+ 
+humanoid.AnimationPlayed:Connect(onAnimationPlayed)
+ 
+ 
+local animationId = 10470104242
+ 
+ 
+local player = game.Players.LocalPlayer
+ 
+local character = player.Character or player.CharacterAdded:Wait()
+ 
+local humanoid = character:WaitForChild("Humanoid")
+ 
+ 
+local function onAnimationPlayed(animationTrack)
+ 
+    if animationTrack.Animation.AnimationId == "rbxassetid://" .. animationId then
+ 
+local p = game.Players.LocalPlayer
+ 
+local Humanoid = p.Character:WaitForChild("Humanoid")
+ 
+ 
+for _, animTrack in pairs(Humanoid:GetPlayingAnimationTracks()) do
+ 
+    animTrack:Stop()
+ 
+end
+ 
+ 
+local AnimAnim = Instance.new("Animation")
+ 
+AnimAnim.AnimationId = "rbxassetid://12447247483"
+ 
+local Anim = Humanoid:LoadAnimation(AnimAnim)
+ 
+ 
+local startTime = 0
+ 
+ 
+wait(0.2)
+ 
+Anim:Play()
+ 
+Anim:AdjustSpeed(0)
+ 
+Anim.TimePosition = startTime
+ 
+Anim:AdjustSpeed(6)
+ 
+ 
+    end
+ 
+end
+ 
+--[[END OF DOWNSLAM ANIM]]
+ 
+--[[Punch anims]]
+ 
+humanoid.AnimationPlayed:Connect(onAnimationPlayed)
+ 
+ 
+local Players = game:GetService("Players")
+ 
+local player = Players.LocalPlayer
+ 
+local character = player.Character or player.CharacterAdded:Wait()
+ 
+local humanoid = character:WaitForChild("Humanoid")
+ 
+ 
+local animationIdsToStop = {
+ 
+    [17859015788] = true, --punch idk
+ 
+    [10469493270] = true, --punch1
+ 
+    [10469630950] = true, --punch2
+ 
+    [10469639222] = true, --punch3
+ 
+    [10469643643] = true, --punch4
+ 
+}
+ 
+ 
+local replacementAnimations = {
+ 
+    ["10469493270"] = "rbxassetid://17889458563", --punch1
+ 
+    ["10469630950"] = "rbxassetid://17889461810", --punch2
+ 
+    ["10469639222"] = "rbxassetid://17889471098", --punch3
+ 
+    ["10469643643"] = "rbxassetid://17889290569", --punch4
+ 
+    ["17859015788"] = "rbxassetid://12684185971", --punch idk
+ 
+    ["11365563255"] = "rbxassetid://14516273501" --punch idk
+ 
+}
+ 
+ 
+local queue = {}
+ 
+local isAnimating = false
+ 
+ 
+local function playReplacementAnimation(animationId)
+ 
+    if isAnimating then
+ 
+        table.insert(queue, animationId)
+ 
+        return
+ 
+    end
+ 
+   
+ 
+    isAnimating = true
+ 
+    local replacementAnimationId = replacementAnimations[tostring(animationId)]
+ 
+    if replacementAnimationId then
+ 
+        local AnimAnim = Instance.new("Animation")
+ 
+        AnimAnim.AnimationId = replacementAnimationId
+ 
+        local Anim = humanoid:LoadAnimation(AnimAnim)
+ 
+        Anim:Play()
+ 
+       
+ 
+        Anim.Stopped:Connect(function()
+ 
+            isAnimating = false
+ 
+            if #queue > 0 then
+ 
+                local nextAnimationId = table.remove(queue, 1)
+ 
+                playReplacementAnimation(nextAnimationId)
+ 
+            end
+ 
+        end)
+ 
+    else
+ 
+        isAnimating = false
+ 
+    end
+ 
+end
+ 
+ 
+local function stopSpecificAnimations()
+ 
+    for _, track in ipairs(humanoid:GetPlayingAnimationTracks()) do
+ 
+        local animationId = tonumber(track.Animation.AnimationId:match("%d+"))
+ 
+        if animationIdsToStop[animationId] then
+ 
+            track:Stop()
+ 
+        end
+ 
+    end
+ 
+end
+ 
+ 
+local function onAnimationPlayed(animationTrack)
+ 
+    local animationId = tonumber(animationTrack.Animation.AnimationId:match("%d+"))
+ 
+    if animationIdsToStop[animationId] then
+ 
+        stopSpecificAnimations()
+ 
+        animationTrack:Stop()
+ 
+       
+ 
+        local replacementAnimationId = replacementAnimations[tostring(animationId)]
+ 
+        if replacementAnimationId then
+ 
+            playReplacementAnimation(animationId)
+ 
+        end
+ 
+    end
+ 
+end
+ 
+ 
+humanoid.AnimationPlayed:Connect(onAnimationPlayed)
+ 
+ 
+local player = game.Players.LocalPlayer
+ 
+local character = player.Character or player.CharacterAdded:Wait()
+ 
+local humanoidRootPart = character:WaitForChild("HumanoidRootPart")
+ 
+ 
+local function onBodyVelocityAdded(bodyVelocity)
+ 
+    if bodyVelocity:IsA("BodyVelocity") then
+ 
+        bodyVelocity.Velocity = Vector3.new(bodyVelocity.Velocity.X, 0, bodyVelocity.Velocity.Z)
+ 
+    end
+ 
+end
+ 
+ 
+character.DescendantAdded:Connect(onBodyVelocityAdded)
+ 
+ 
+for _, descendant in pairs(character:GetDescendants()) do
+ 
+    onBodyVelocityAdded(descendant)
+ 
+end
+ 
+ 
+player.CharacterAdded:Connect(function(newCharacter)
+ 
+    character = newCharacter
+ 
+    humanoidRootPart = character:WaitForChild("HumanoidRootPart")
+ 
+    character.DescendantAdded:Connect(onBodyVelocityAdded)
+ 
+   
+ 
+    for _, descendant in pairs(character:GetDescendants()) do
+ 
+        onBodyVelocityAdded(descendant)
+ 
+    end
+ 
+end) 
+
+-- Connect the function to the humanoid's AnimationPlayed event for the local player's character
+
+local function onCharacterAdded(character)
+    local humanoid = character:FindFirstChildOfClass("Humanoid")
+    if humanoid then
+        humanoid.AnimationPlayed:Connect(onAnimationPlayed)
+    else
+
+    end
+end
+
+-- Detect when the local player's character is added to the game
+if player.Character then
+    onCharacterAdded(player.Character)
+else
+
+end
+
+player.CharacterAdded:Connect(onCharacterAdded)
+
+-- b64 decode
+local function decodeBase64(data)
+    local b = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/'
+    data = string.gsub(data, '[^'..b..'=]', '')
+    return (data:gsub('.', function(x)
+        if (x == '=') then return '' end
+        local r,f = '',(b:find(x)-1)
+        for i=6,1,-1 do r=r..(f%2^i-f%2^(i-1)>0 and '1' or '0') end
+        return r;
+    end):gsub('%d%d%d?%d?%d?%d?%d?%d?', function(x)
+        if (#x ~= 8) then return '' end
+        local c=0
+        for i=1,8 do c=c+(x:sub(i,i)=='1' and 2^(8-i) or 0) end
+        return string.char(c)
+    end))
+end
+ 
